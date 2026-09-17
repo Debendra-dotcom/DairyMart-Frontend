@@ -1398,7 +1398,7 @@ export default function App() {
   const fetchProducts = useCallback(() => {
     setLoadingProducts(true);
     setProductsError(false);
-    fetch('/api/products/')
+    fetch('https://dairymart-backend.onrender.com/api/products/')
       .then((res) => {
         if (!res.ok) throw new Error("Products request failed");
         return res.json();
