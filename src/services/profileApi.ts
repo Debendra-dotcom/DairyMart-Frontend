@@ -1,7 +1,7 @@
 import type { Address, AddressPayload, Profile, ProfileUpdatePayload } from "../types/profile";
 import { debugAuthState, getAccessToken as readAccessToken } from "./authStorage";
 
-const API_BASE = "http://127.0.0.1:8000/api/profile";
+const API_BASE = "https://dairymart-backend.onrender.com/api/profile";
 
 export function getAccessToken() {
   return readAccessToken();

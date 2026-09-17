@@ -1,7 +1,7 @@
 import { getAccessToken } from "./profileApi";
 import type { DashboardData, DeliveryOrder, Subscription, WalletTransaction } from "../types/dashboard";
 
-const API_BASE = "http://127.0.0.1:8000/api/dashboard";
+const API_BASE = "https://dairymart-backend.onrender.com/api/dashboard";
 
 function authHeaders(extra?: HeadersInit): HeadersInit {
   const token = getAccessToken();

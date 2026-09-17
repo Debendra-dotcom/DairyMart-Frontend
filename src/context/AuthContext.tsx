@@ -10,7 +10,7 @@ import {
   storeAuthSession,
 } from "../services/authStorage";
 
-const AUTH_BASE = "http://127.0.0.1:8000/api/auth";
+const AUTH_BASE = "https://dairymart-backend.onrender.com/api/auth";
 
 type SignupPayload = {
   name: string;
